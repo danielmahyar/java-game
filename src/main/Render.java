@@ -26,6 +26,8 @@ public class Render {
             case SETTINGS:
                 game.getSettings().render(g);
                 break;
+            case QUIT:
+                System.exit(0);
         }
     }
 

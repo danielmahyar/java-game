@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54ef712c-1a62-4c8c-9ac7-3c69a0df68f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inputs/KeyboardListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/inputs/MyMouseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/GameScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Render.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/res/spriteatlas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/GameScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Playing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/SceneMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/Settings.java" afterDir="false" />
+    <list default="true" id="54ef712c-1a62-4c8c-9ac7-3c69a0df68f4" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/helperMethods/LevelBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helperMethods/LoadSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/managers/TileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/objects/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/MyButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputs/MyMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputs/MyMouseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Render.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/GameScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/GameScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Playing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Playing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/SceneMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/SceneMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Settings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +36,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c1cba4ed-a269-4d21-9e15-671e3dc4cad8" />
+        <option name="url" value="https://github.com/danielmahyar/java-game.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2AGKXkycbQHgBn9JYSKT0Vegiye" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/res" />
@@ -89,6 +98,14 @@
       <option name="presentableId" value="Default" />
       <updated>1654630524133</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1654639089637</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654639089637</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +118,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

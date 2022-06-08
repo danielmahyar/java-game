@@ -1,27 +1,64 @@
 package inputs;
 
+import main.Game;
+import main.GameState;
+
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 public class MyMouseListener implements MouseListener, MouseMotionListener {
 
+    private Game game;
+    public MyMouseListener(Game game){
+        this.game = game;
+    }
 
     @Override
     public void mouseClicked(MouseEvent e) {
         if(e.getButton() == MouseEvent.BUTTON1){
-            System.out.println("LEFT CLICK");
+            switch(GameState.gameState){
+                case PLAYING:
+                    game.getPlaying().mouseClicked(e.getX(), e.getY());
+                    break;
+                case MENU:
+                    game.getMenu().mouseClicked(e.getX(), e.getY());
+                    break;
+                case SETTINGS:
+                    game.getSettings().mouseClicked(e.getX(), e.getY());
+                    break;
+            }
         }
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        switch(GameState.gameState){
+            case PLAYING:
+                game.getPlaying().mousePressed(e.getX(), e.getY());
+                break;
+            case MENU:
+                game.getMenu().mousePressed(e.getX(), e.getY());
+                break;
+            case SETTINGS:
+                game.getSettings().mousePressed(e.getX(), e.getY());
+                break;
+        }
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        switch(GameState.gameState){
+            case PLAYING:
+                game.getPlaying().mouseReleased(e.getX(), e.getY());
+                break;
+            case MENU:
+                game.getMenu().mouseReleased(e.getX(), e.getY());
+                break;
+            case SETTINGS:
+                game.getSettings().mouseReleased(e.getX(), e.getY());
+                break;
+        }
     }
 
     @Override
@@ -41,6 +78,15 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
+            switch(GameState.gameState){
+                case PLAYING:
+                    break;
+                case MENU:
+                    game.getMenu().mouseMoved(e.getX(), e.getY());
+                    break;
+                case SETTINGS:
 
+                    break;
+            }
     }
 }

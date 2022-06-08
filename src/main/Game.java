@@ -16,8 +16,6 @@ public class Game extends JFrame implements Runnable {
     private BufferedImage img;
     private Thread gameThread;
 
-    private MyMouseListener mouse;
-    private KeyListener keyboard;
 
     private Render render;
     private Menu menu;
@@ -33,11 +31,9 @@ public class Game extends JFrame implements Runnable {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         initClasses();
-        
         add(gameScreen);
         pack();
         setVisible(true);
-
     }
 
     private void initClasses() {
@@ -62,17 +58,7 @@ public class Game extends JFrame implements Runnable {
 
     public static void main(String[] args) {
         Game game = new Game();
-        game.initInputs();
         game.start();
-    }
-
-    private void initInputs() {
-        mouse = new MyMouseListener();
-        keyboard = new KeyboardListener();
-        addMouseListener(mouse);
-        addMouseMotionListener(mouse);
-        addKeyListener(keyboard);
-        requestFocus();
     }
 
     private void start() {

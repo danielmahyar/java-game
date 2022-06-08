@@ -14,5 +14,7 @@ public abstract class GameScene {
         return game;
     }
 
-    public abstract void render(Graphics g);
+    public void render(Graphics g) {
+
+    }
 }
